@@ -11,26 +11,63 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
+<style>
+  body{
+      font-family:'Lexend';
+  }
+  nav{
+      background-color:#BBE7FE;
+  }
+  
+</style>
 <body>
-    <div class="collapse collapse-arrow bg-base-200">
+  <div>
+    <nav  class=" flex  flex-col  gap-3 justify-evenly  py-3 lg:flex-row">
+       <a role="button" class="btn bg-lime-400 w-2/6 h-2/6 p-2 text-center rounded-lg border-none lg:w-1/12 h-1/12" href="index.html">Home</a>
+        
+        <div class="flex gap-1">
+            <img class="w-[20px] lg:w-[30px] "  src="assets/logo.png">
+        <h3>Donate bangladesh</h3></div>
+        <div class="flex gap-1">
+            <img   src="assets/coin.png ">
+            <p id="balance">500 BDT</p>
+        </div>
+        
+    </nav>
+</div>
+<h2 class=" text-center  mt-3 font-medium text-2xl">Important FAQ </h2>
+    <div class=" mt-4 ml-4 w-5/6 collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" checked="checked" />
         <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
         <div class="collapse-content">
           <p>The Document Object Model (DOM) is a programming interface for web documents. It represents the page so that programs can change the document structure, style, and content.</p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <br>
+      <div class=" ml-4 w-5/6 collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>There are multiple ways to select an element ,ex-.getElementById(),.querySelector()etc. </p>
         </div>
       </div>
-      <div class="collapse collapse-arrow bg-base-200">
+      <br>
+      <div class=" ml-4 w-5/6 collapse collapse-arrow bg-base-200">
         <input type="radio" name="my-accordion-2" />
-        <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+        <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
         <div class="collapse-content">
-          <p>hello</p>
+          <p>Event delegation is a design pattern in JavaScript used to efficiently manage and handle events on multiple child elements by attaching a single event listener to a common ancestor element. It is helpful because  allows you to attach a single listener to the parent container.
+          </p>
+        </div>
+      </div>
+      <br>
+      <div class=" ml-4 w-5/6 collapse collapse-arrow bg-base-200">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+        <div class="collapse-content">
+          <p>In JavaScript, we have four methods for modifying element attributes:hasAttribute()-Returns a true or false boolean,setAttribute()-	Adds or updates value of a specified attribute,
+            getAttribute()-	Returns the value of a specified attribute or null,removeAttribute()-	Removes an attribute from an element.
+          </p>
         </div>
       </div>
 </body>

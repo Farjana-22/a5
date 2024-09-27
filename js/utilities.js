@@ -24,3 +24,4 @@ function time() {
                 + currentdate.getSeconds();
                 return timenow;
 }
+//onclick=" my_modal_5.showModal()"

@@ -1,11 +1,11 @@
 function getInput(id){
    let input = document.getElementById(id).value;
-   let inputNumber =parseFloat(input);
+    inputNumber =parseFloat(input);
    return inputNumber;
 }
 function getTextInput(id){
     let inputTwo = document.getElementById(id).innerText;
-    let inputTwoNumber =parseFloat(inputTwo);
+     inputTwoNumber =parseFloat(inputTwo);
     return inputTwoNumber;
  }
 function showSection(id){
@@ -24,4 +24,3 @@ function time() {
                 + currentdate.getSeconds();
                 return timenow;
 }
-//onclick=" my_modal_5.showModal()"

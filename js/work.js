@@ -13,9 +13,14 @@ document.getElementById('donate-button')
   let amount= getTextInput('donate-button-amount');
   let newBalance =amount+addMoney;
   document.getElementById('donate-button-amount').innerText=`${newBalance} BDT`;
-  let dTime=time();
+  let dTime=Date();
   let p = document.createElement('p');
-  p.innerText = `Donated: ${addMoney} Tk. to Donate for Flood at Noakhali, Bangladesh at ${dTime} `;
+
+  p.classList.add('p-4', 'bg-gray-500', 'mt-2')
+
+
+  p.innerText =` Donated: ${addMoney} Tk. to Donate for Flood at Noakhali, Bangladesh at ${dTime} `;
+
   document.getElementById('history-section').appendChild(p);
    document.getElementById('my_modal_1').showModal();
    }  
@@ -36,10 +41,12 @@ document.getElementById('button-donate')
   let amount1= getTextInput('donate-button-amount');
   let newBalance1 =amount1+money;
   document.getElementById('button-donate-amount').innerText=`${newBalance1} BDT`;
-  let donTime=time();
+  let donTime=Date();
+  
   let p1 = document.createElement('p');
+  p1.classList.add('p-4', 'bg-gray-500','mt-2')
   p1.innerText = `Donated: ${money} Tk. to Donate for Flood Relief in Feni,Bangladesh at ${donTime} `;
-  console.log(p1); 
+  
   document.getElementById('history-section').appendChild(p1);
   document.getElementById('my_modal_2').showModal();
    }  
@@ -62,8 +69,9 @@ document.getElementById('donation-button')
   document.getElementById('donation-button-amount').innerText=`${newBalance2} BDT`;
   let donateTime=time();
   let p2 = document.createElement('p');
-  p2.innerText = `Donated: ${money1} Tk. to Donate for  Aid for Injured in the Quota Movement at ${donateTime} `;
-  console.log(p2); 
+  p2.classList.add('p-4', 'bg-gray-500','mt-2')
+  p2.innerText = `Donated: ${money1} Tk. to Donate for  Aid for Injured in the Quota Movement at ${donateTime}` ;
+ 
   document.getElementById('history-section').appendChild(p2);
   document.getElementById('my_modal_3').showModal();
    }  
